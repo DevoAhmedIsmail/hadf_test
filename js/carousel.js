@@ -65,6 +65,7 @@ $(document).ready(function(){
           }
       }
   });
+  $('.vendor-carousel .owl-nav').hide()
   });
 
   
