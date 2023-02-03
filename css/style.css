@@ -27,27 +27,60 @@ nav {
 
 /* End Navbar */
 
-/* services & categories */
-.services .service_item,
+/* services  */
+.services .service_item {
+    overflow: hidden;
+}
+
+.services .service_item .img_wrapper {
+    /* width: 269px; */
+    width: 100%;
+    height: 225px;
+}
+
+.services .service_item .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services .service_item .footer {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #004991db;
+    transition: all 300ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.services .service_item .footer span {
+    display: block;
+}
+/* End services */
+
+/* Categories */
 .categories .service_item {
     overflow: hidden;
 }
 
-.services .service_item .img_wrapper,
 .categories .service_item .img_wrapper {
     /* width: 269px; */
     width: 100%;
     height: 225px;
 }
 
-.services .service_item .img_wrapper img,
 .categories .service_item .img_wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.services .service_item .footer,
 .categories .service_item .footer {
     position: absolute;
     bottom: -33px;
@@ -56,15 +89,43 @@ nav {
     transition: all 300ms;
 }
 
-.services .service_item:hover .footer {
-    bottom: 0;
-}
-
 .categories .service_item .footer {
     bottom: 0;
 }
 
-/* End services & categories*/
+/* End Categories */
+
+
+/*  some_works */
+.some_works .service_item {
+    overflow: hidden;
+}
+
+.some_works .service_item .img_wrapper {
+    /* width: 269px; */
+    width: 100%;
+    height: 225px;
+}
+
+.some_works .service_item .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.some_works .service_item .footer {
+    position: absolute;
+    top: 80%;
+    height: 100%;
+    width: 100%;
+    background-color: #004991e3;
+    transition: all 300ms;
+}
+
+.some_works .service_item:hover .footer {
+    top: 50%;
+}
+/* End some_works */
 
 /* Courses */
 .courses .course-item {
@@ -223,10 +284,9 @@ nav {
 .vendorss .owl-carousel .owl-item img {
     display: block;
     width: 100%;
-    padding: 20px;
-    border: 1px solid gainsboro;
-    border-radius: 25px 41px;
-    background: #181b24;
+    /* padding: 20px; */
+    padding: 5px;
+    border: 2px solid var(--secondColor);
 }
 /* Our partenar */
 
@@ -242,3 +302,70 @@ footer .img_wrapper img {
     object-fit: cover;
 }
 /* End Footer */
+
+/* about_page */
+.about_page .img_wrapper.img_section {
+    width: 100%;
+    height: 350px;
+}
+
+.about_page .img_wrapper.img_section img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #181b2496;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.about_page .img_wrapper.img_thub {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.about_page .img_wrapper.img_thub img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* End about_page */
+
+/* testimonials_page */
+.testimonials_page .img_wrapper {
+    width: 100%;
+    height: 200px;
+}
+
+.testimonials_page .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* End testimonials_page */
+
+/* partners_page */
+.partners_page .img_wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.partners_page .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* End partners_page */

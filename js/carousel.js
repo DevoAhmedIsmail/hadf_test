@@ -49,19 +49,20 @@ $(document).ready(function(){
       dots: false,
       loop: true,
       autoplay: true,
+    autoplayTimeout: 2000,
       smartSpeed: 1000,
       responsive: {
           0:{
               items:2
           },
           576:{
-              items:4
-          },
-          768:{
               items:6
           },
-          992:{
+          768:{
               items:8
+          },
+          992:{
+              items:9
           }
       }
   });
