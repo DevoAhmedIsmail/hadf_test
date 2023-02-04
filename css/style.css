@@ -339,6 +339,16 @@ footer .img_wrapper img {
     height: 100%;
     object-fit: cover;
 }
+
+.about_page .img_person_wrapper {
+    width: 100%;
+    height: 200px;
+}
+
+.about_page .img_person_wrapper img {
+    width: 100%;
+    height: 100%;
+}
 /* End about_page */
 
 /* testimonials_page */
@@ -364,6 +374,20 @@ footer .img_wrapper img {
 }
 
 .partners_page .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.partners_page .partners_list .img_wrapper {
+    width: 100%;
+    height: 130px; 
+    padding: 12px 5px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.partners_page .partners_list .img_wrapper img {
     width: 100%;
     height: 100%;
     object-fit: contain;
