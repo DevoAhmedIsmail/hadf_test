@@ -11,12 +11,17 @@
 }
 
 nav,
-nav ul,
-nav ul li {
+nav ul
+ {
     z-index: 999;
 }
 
-nav ul li ul li {
+nav ul .nav_item .nav_item_dropdown {
+    background: #fff;
+    z-index: 999;
+}
+
+nav ul .nav_item .nav_item_dropdown li {
     z-index: 999;
 }
 

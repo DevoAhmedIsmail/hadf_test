@@ -79,13 +79,13 @@
 
             <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
                 <ul class="text-base text-gray-700 md:flex md:justify-between  md:pt-0">
-                    <li class="relative group">
+                    <li class="relative group nav_item">
                         <a class="md:p-4 py-2 block hover:text-yellow-300" href="index.html">الرئيسية</a>
                     </li>
-                    <li class="relative group">
+                    <li class="relative group nav_item">
                         <a class="md:p-4 py-2 block hover:text-yellow-300" href="about.html"><span>من نحن</span><i
                                 class="fa-solid fa-chevron-down mr-2"></i> </a>
-                        <ul class="absolute top-10 border pr-2 bg-white w-32 hidden group-hover:block rounded">
+                        <ul class="absolute top-10 border pr-2 bg-white w-32 hidden group-hover:block rounded nav_item_dropdown">
                             <li class="py-2 px-2"><a href="about.html">عن المركز</a></li>
                             <li class="py-2 px-2"><a href="#">الادارة</a></li>
                             <li class="py-2 px-2"><a href="#">منهجية التدريب</a></li>
@@ -93,10 +93,10 @@
                             <li class="py-2 px-2"><a href="#">خبراء التدريب</a></li>
                         </ul>
                     </li>
-                    <li class="relative group">
+                    <li class="relative group nav_item">
                         <a class="md:p-4 py-2 block hover:text-yellow-300" href="categories.html"><span>التخصصات التدريبية</span><i
                                 class="fa-solid fa-chevron-down mr-2"></i></a>
-                        <ul class="absolute top-10 border pr-2 bg-white w-40 hidden group-hover:block rounded">
+                        <ul class="absolute top-10 border pr-2 bg-white w-40 hidden group-hover:block rounded nav_item_dropdown">
                             <li class="py-2 px-2"><a href="#">موارد بشرية</a></li>
                             <li class="py-2 px-2"><a href="#">تقنية المعلومات</a></li>
                             <li class="py-2 px-2"><a href="#">ادارة</a></li>
@@ -105,19 +105,19 @@
                             <li class="py-2 px-2"><a href="#">محاسبة مالية</a></li>
                         </ul>
                     </li>
-                    <li class="relative group">
+                    <li class="relative group nav_item">
                         <a class="md:p-4 py-2 block hover:text-yellow-300" href="services.html"><span>خدماتنا</span><i
                                 class="fa-solid fa-chevron-down mr-2"></i></a></a>
-                        <ul class="absolute top-10 border pr-2 bg-white w-40 hidden group-hover:block rounded">
+                        <ul class="absolute top-10 border pr-2 bg-white w-40 hidden group-hover:block rounded nav_item_dropdown">
                             <li class="py-2 px-2"><a href="#">خدمات تدريب</a></li>
                             <li class="py-2 px-2"><a href="#">خدمات استشارات</a></li>
                             <li class="py-2 px-2"><a href="#">خدمات توظيف</a></li>
                         </ul>
                     </li>
-                    <li class="relative group">
+                    <li class="relative group nav_item">
                         <a class="md:p-4 py-2 block hover:text-yellow-300" href="#"><span>المركز الاعلامي</span><i
                                 class="fa-solid fa-chevron-down mr-2"></i></a></a>
-                        <ul class="absolute top-10 border pr-2 bg-white w-32 hidden group-hover:block rounded">
+                        <ul class="absolute top-10 border pr-2 bg-white w-32 hidden group-hover:block rounded nav_item_dropdown">
                             <li class="py-2 px-2"><a href="#">اخبار</a></li>
                             <li class="py-2 px-2"><a href="testimonials.html">قالوا عنا</a></li>
                             <li class="py-2 px-2"><a href="#">صور</a></li>
@@ -125,10 +125,10 @@
                             <li class="py-2 px-2"><a href="#">فاعليات</a></li>
                         </ul>
                     </li>
-                    <li class="relative group">
+                    <li class="relative group nav_item">
                         <a class="md:p-4 py-2 block hover:text-yellow-300" href="blogs.html">المدونة</a>
                     </li>
-                    <li class="relative group">
+                    <li class="relative group nav_item">
                         <a class="md:p-4 py-2 block hover:text-yellow-300" href="#">اتصل بنا</a>
                     </li>
                 </ul>
@@ -146,10 +146,10 @@
                             <h1 class="text-white text-uppercase mb-3 animated slideInDown h4">تعلّم أونلاين</h1>
                             <h5 class=" text-white mb-md-4 animated zoomIn h5">من أكبر مكتبة كورسات في الوطن العربي
                             </h5>
-                            <a href="#" class="btn bg-main py-md-3 px-md-5 me-3 animated slideInLeft rounded ">التفاصيل
+                            <a href="#" class="btn bg-main py-md-3 px-md-5 me-3 animated slideInLeft rounded  mt-6 md:mt-0">التفاصيل
                                 و
                                 التسجيل</a>
-                            <a href="#" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">اشترك
+                            <a href="#" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight mt-6 md:mt-0">اشترك
                                 الآن</a>
                         </div>
                     </div>
@@ -975,16 +975,16 @@
         <!-- End Categories -->
 
         <!-- Divider -->
-        <section class="bg py-5 bg-header-contact text-center text-white text-2xl fw-bold">
-            <div class="wow animate__backInRight">
-                <p>لمساعدة رواد الأعمال على العمل معًا</p>
-                <p class="mt-2 text-main"> قبل التحدث إلى المستثمرين.</p>
+        <section class="bg py-5 bg-header-contact text-center text-white text-2xl fw-bold overflow-hidden">
+            <div>
+                <p class="wow animate__backInRight" data-wow-duration="2s">لمساعدة رواد الأعمال على العمل معًا</p>
+                <p class="mt-2 text-main wow animate__backInLeft" data-wow-duration="2s"> قبل التحدث إلى المستثمرين.</p>
             </div>
         </section>
         <!-- End Divider -->
 
         <!-- Certifications -->
-        <section class="certifications py-5">
+        <section class="certifications py-5 ">
             <div class="section_title bg-gray-50 py-1">
                 <p> نؤهلك للحصول على شهادات مهنية معتمدة</p>
             </div>
