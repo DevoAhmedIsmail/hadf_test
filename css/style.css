@@ -1,0 +1,400 @@
+/* Navbar */
+.top_bar .img_wrap {
+    width: 30px;
+    height: 30px;
+}
+
+.top_bar .img_wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav,
+nav ul
+ {
+    z-index: 999;
+}
+
+nav ul .nav_item .nav_item_dropdown {
+    background: #fff;
+    z-index: 999;
+}
+
+nav ul .nav_item .nav_item_dropdown li {
+    z-index: 999;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+/* End Navbar */
+
+/* services  */
+.services .service_item {
+    overflow: hidden;
+}
+
+.services .service_item .img_wrapper {
+    /* width: 269px; */
+    width: 100%;
+    height: 225px;
+}
+
+.services .service_item .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services .service_item .footer {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #004991db;
+    transition: all 300ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.services .service_item .footer span {
+    display: block;
+}
+/* End services */
+
+/* Categories */
+.categories .service_item {
+    overflow: hidden;
+}
+
+.categories .service_item .img_wrapper {
+    /* width: 269px; */
+    width: 100%;
+    height: 225px;
+}
+
+.categories .service_item .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categories .service_item .footer {
+    position: absolute;
+    bottom: -33px;
+    width: 100%;
+    background-color: #004991e3;
+    transition: all 300ms;
+}
+
+.categories .service_item .footer {
+    bottom: 0;
+}
+
+/* End Categories */
+
+
+/*  some_works */
+.some_works .service_item {
+    overflow: hidden;
+}
+
+.some_works .service_item .img_wrapper {
+    /* width: 269px; */
+    width: 100%;
+    height: 225px;
+}
+
+.some_works .service_item .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.some_works .service_item .footer {
+    position: absolute;
+    top: 80%;
+    height: 100%;
+    width: 100%;
+    background-color: #004991e3;
+    transition: all 300ms;
+}
+
+.some_works .service_item:hover .footer {
+    top: 50%;
+}
+/* End some_works */
+
+/* Courses */
+.courses .course-item {
+    border: 2px solid #0187A9;
+    border-radius: 12px;
+    padding: 11px;
+    margin-bottom: 30px;
+    transition: border .5s ease-in-out;
+    height: 100%;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.courses .course-item svg {
+    width: 15px;
+    margin: 0 7px;
+    stroke: #bbbbbb;
+}
+
+.courses .team-item .team-img img,
+.courses .course-item .course-img img {
+    transition: .5s;
+}
+
+.courses .moreDetailsBtn,
+.moreDetailsBtn:hover {
+    background: #83848d;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 14px;
+    left: 12px;
+    right: 12px;
+    width: auto;
+}
+
+.courses .moreDetailsBtn,
+.moreDetailsBtn:hover {
+    background: white;
+    color: #83848d;
+}
+
+.courses .course-item .course-img a {
+    font-size: .9rem;
+}
+
+.courses .team-item:hover .team-img img,
+.courses .course-item:hover .course-img img {
+    transform: scale(1.15);
+}
+
+.courses .course-item {
+    border: none;
+    border-radius: 12px;
+    padding: 21px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+
+.courses .moreDetailsBtn,
+.moreDetailsBtn:hover {
+    left: 12px;
+    right: 12px;
+    width: 100%;
+}
+
+.courses .Price_c {
+    position: absolute;
+    bottom: 63px;
+    left: 18px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    background: #0187a9;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.courses .course-item .course-img a {
+    font-size: .9rem;
+    left: -3px;
+    width: auto;
+    right: initial !important;
+}
+
+.courses .showall {
+    position: absolute;
+    right: 42px;
+}
+
+.courses .vendorss .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid gainsboro;
+    border-radius: 25px 41px;
+    background: #181b24;
+}
+
+.courses .list-unstyled {
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+    margin: 12px 0px 0px 0px;
+}
+
+/* End Courses */
+
+/* Certifications */
+.certifications .certificates .img_wrapper {
+    width: 80%;
+    height: 90px;
+}
+
+.certifications .certificates .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* End Certifications */
+
+/* Testimonials */
+.testimonials .img_wrapper {
+    width: 275px;
+    height: 145px;
+}
+
+.testimonials .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* End Testimonials */
+
+/* Blogs */
+.blogs .img_wrapper {
+    width: 100%;
+    height: 182px;
+}
+
+.blogs .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogs .img_wrapper::after {
+    content: "";
+    background-color: var(--mainColor);
+    height: 4px;
+    width: 85px;
+    margin-top: 25px;
+    display: block;
+}
+/* End Blogs */
+
+/* Our partenar */
+.vendorss .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    /* padding: 20px; */
+    padding: 5px;
+    border: 2px solid var(--secondColor);
+}
+/* Our partenar */
+
+/* Footer */
+footer .img_wrapper {
+    width: 230px;
+    height: 130px;
+}
+
+footer .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* End Footer */
+
+/* about_page */
+.about_page .img_wrapper.img_section {
+    width: 100%;
+    height: 350px;
+}
+
+.about_page .img_wrapper.img_section img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #181b2496;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.about_page .img_wrapper.img_thub {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.about_page .img_wrapper.img_thub img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_page .img_person_wrapper {
+    width: 100%;
+    height: 200px;
+}
+
+.about_page .img_person_wrapper img {
+    width: 100%;
+    height: 100%;
+}
+/* End about_page */
+
+/* testimonials_page */
+.testimonials_page .img_wrapper {
+    width: 100%;
+    height: 200px;
+}
+
+.testimonials_page .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* End testimonials_page */
+
+/* partners_page */
+.partners_page .img_wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.partners_page .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.partners_page .partners_list .img_wrapper {
+    width: 100%;
+    height: 130px; 
+    padding: 12px 5px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.partners_page .partners_list .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* End partners_page */
