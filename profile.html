@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.theme.default.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/css-circular-prog-bar.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Bootstrap & Tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>HADF</title>
+</head>
+
+<body>
+    <div class="home_page ">
+        <!-- Topbar -->
+        <div class="hidden lg:block top_bar bg-second ">
+            <div class=" container mx-auto">
+                <div class="d-flex items-center justify-between text-white">
+                    <div class="d-flex gap-2 items-center">
+                        <p><i class="fa-solid fa-phone ml-2"></i><span>997928928298</span></p>
+                        <p><i class="fa-solid fa-envelope-open ml-2"></i><span>mail@example.com</span></p>
+                        <p class="py-2 px-2 cursor-pointer bg-main text-second hover:mainColor fw-bolder">
+                            <i class="fa-solid fa-download ml-2"></i><span>مركز التحميل</span>
+                        </p>
+                    </div>
+                    <div class="d-flex items-center gap-4">
+                        <p class="cursor-pointer hover:text-yellow-500"><i
+                                class="fa-solid fa-magnifying-glass ml-2"></i><span>ابحث الان</span></p>
+                        <div class="d-flex gap-3">
+                            <i class="fa-brands fa-twitter cursor-pointer hover:text-yellow-500"></i>
+                            <i class="fa-brands fa-facebook-f cursor-pointer hover:text-yellow-500"></i>
+                            <i class="fa-brands fa-linkedin-in cursor-pointer hover:text-yellow-500"></i>
+                            <i class="fa-brands fa-instagram cursor-pointer hover:text-yellow-500"></i>
+                        </div>
+                        <div class="d-flex items-center cursor-pointer hover:text-yellow-500">
+                            <p class="ml-2">العربية</p>
+                            <div class="img_wrap">
+                                <img src="https://www.almrsal.com/wp-content/uploads/2019/03/%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AD%D8%A7%D9%84%D9%8A%D8%A7-768x512.png"
+                                    alt="ar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+
+
+        <nav
+            class=" flex flex-wrap justify-between md:justify-start items-center shadow  w-full px-4 text-lg text-gray-700 bg-white">
+            <!-- Navbar -->
+
+            <div>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo" class="w-16 h-16 object-contain	">
+                </a>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+                <ul class="text-base text-gray-700 md:flex md:justify-between  md:pt-0">
+                    <li class="relative group nav_item">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="relative group nav_item">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500" href="about.html"><span>من نحن</span><i
+                                class="fa-solid fa-chevron-down mr-2"></i> </a>
+                        <ul
+                            class="absolute top-10 border pr-2 bg-white w-32 hidden group-hover:block rounded nav_item_dropdown">
+                            <li class="py-2 px-2"><a href="about.html">عن المركز</a></li>
+                            <li class="py-2 px-2"><a href="#">الادارة</a></li>
+                            <li class="py-2 px-2"><a href="#">منهجية التدريب</a></li>
+                            <li class="py-2 px-2"><a href="#">منهجية التقييم</a></li>
+                            <li class="py-2 px-2"><a href="#">خبراء التدريب</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group nav_item">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500" href="categories.html"><span>التخصصات
+                                التدريبية</span><i class="fa-solid fa-chevron-down mr-2"></i></a>
+                        <ul
+                            class="absolute top-10 border pr-2 bg-white w-40 hidden group-hover:block rounded nav_item_dropdown">
+                            <li class="py-2 px-2"><a href="#">موارد بشرية</a></li>
+                            <li class="py-2 px-2"><a href="#">تقنية المعلومات</a></li>
+                            <li class="py-2 px-2"><a href="#">ادارة</a></li>
+                            <li class="py-2 px-2"><a href="#">جودة</a></li>
+                            <li class="py-2 px-2"><a href="#">ريادة اعمال</a></li>
+                            <li class="py-2 px-2"><a href="#">محاسبة مالية</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group nav_item">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500" href="services.html"><span>خدماتنا</span><i
+                                class="fa-solid fa-chevron-down mr-2"></i></a></a>
+                        <ul
+                            class="absolute top-10 border pr-2 bg-white w-40 hidden group-hover:block rounded nav_item_dropdown">
+                            <li class="py-2 px-2"><a href="#">خدمات تدريب</a></li>
+                            <li class="py-2 px-2"><a href="#">خدمات استشارات</a></li>
+                            <li class="py-2 px-2"><a href="#">خدمات توظيف</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group nav_item">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500" href="#"><span>المركز الاعلامي</span><i
+                                class="fa-solid fa-chevron-down mr-2"></i></a></a>
+                        <ul
+                            class="absolute top-10 border pr-2 bg-white w-32 hidden group-hover:block rounded nav_item_dropdown">
+                            <li class="py-2 px-2"><a href="#">اخبار</a></li>
+                            <li class="py-2 px-2"><a href="testimonials.html">قالوا عنا</a></li>
+                            <li class="py-2 px-2"><a href="#">صور</a></li>
+                            <li class="py-2 px-2"><a href="#">فيديوهات</a></li>
+                            <li class="py-2 px-2"><a href="#">فاعليات</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group nav_item">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500" href="blogs.html">المدونة</a>
+                    </li>
+                    <li class="relative group nav_item">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500" href="contact-us.html">اتصل بنا</a>
+                    </li>
+                    <li class="relative group nav_item">
+                        <a class="md:p-4 px-4 py-2 mr-0 lg:mr-24 d-inline-block hover:text-yellow-500 bg-second text-white rounded-full "
+                            href="signin.html">تسجيل الدخول</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Navbar -->
+        </nav>
+
+        <!-- Profile -->
+        <div class="profile py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12">
+                        <div class="side_profile border">
+                            <ul class="nav nav-tabs flex-col space-y-1" role="tablist">
+                                <li class="nav-item">
+                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabs-1"
+                                        role="tab">
+                                        <span><i class="fas fa-user"></i></span>
+                                        <span>بياناتي</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-2" role="tab">
+                                        <span><i class="fas fa-school"></i></span>
+                                        <span>دوراتي</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-3" role="tab">
+                                        <span><i class="fas fa-certificate"></i></span>
+                                        <span>بيانات للشهادة</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-4" role="tab">
+                                        <span><i class="fas fa-heart"></i></span>
+                                        <span>المفضلة</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-5" role="tab">
+                                        <span><i class="far fa-bell"></i></span>
+                                        <span>الاشعارات والرسائل</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-6" role="tab">
+                                        <span><i class="fas fa-book"></i></span>
+                                        <span> السيرة الذاتية</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-7" role="tab">
+                                        <span><i class="fas fa-gift"></i></span>
+                                        <span>اهداء صديق</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-8" role="tab">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span>نقاطي</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-12">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show  active" id="tabs-1" role="tabpanel">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="label-form">الاسم</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <label class="label-form">رقم الهاتف</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <label class="label-form">المسمى الوظيفي</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <label class="label-form">الشركة</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-md-6 mt-3">
+                                            <label class="label-form">الدولة</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-md-6 mt-3">
+                                            <label class="label-form">المدينة</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div>
+                                            <button
+                                                class="d-block mx-auto py-2 px-4 mt-3 bg-second text-white rounded"><i
+                                                    class="fa-solid fa-floppy-disk"></i> حفظ</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade" id="tabs-2" role="tabpanel">
+                                <ul class="nav nav-tabs tabs_inside" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#tabs-11"
+                                            role="tab">الجميع</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#tabs-12" role="tab">دوراتي
+                                            الحالية</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#tabs-13" role="tab">القادمة</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#tabs-14" role="tab">المنتهيه</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#tabs-15" role="tab">المؤرشفة</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content tab_content_side">
+                                    <div class="tab-pane active" id="tabs-11" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">م</th>
+                                                        <th scope="col">اسم البرنامج</th>
+                                                        <th scope="col">تاريخ التسجيل</th>
+                                                        <th scope="col">التفاصيل</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+
+
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>شسيضصب </td>
+                                                        <td>سثلبضبسشي</td>
+                                                        <td>
+                                                            <div class="btns">
+
+                                                                <!-- {% if course.course.is_free %}
+                                            
+                                          <button class="details btn_main" onclick="window.location.href = '{{course.course.get_info_url}}';"><i class="fa-solid fa-circle-info"></i> تفاصيل</button>
+                                          {% endif %} -->
+
+                                                                <!-- {% if course.status  == 'approved' %}
+                                          <button class="details btn_main" onclick="window.location.href = '{{course.course.get_info_url}}';"><i class="fa-solid fa-circle-info"></i> تفاصيل</button>
+                                          {% elif course.status  == 'pending' %} -->
+                                                                <button class="details btn btn-secondary rounded"
+                                                                    disabled>في انتظار القبول</button>
+                                                                <button class="del btn_main"><i
+                                                                        class="fa-solid fa-trash-can"></i> طلب
+                                                                    حذف</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>شيضب تضصتبمت ض</td>
+                                                        <td>25 يناير</td>
+                                                        <td>
+                                                            <div class="btns">
+                                                                <button class="details btn_main"
+                                                                    onclick="window.location.href = '{{course.course.get_info_url}}';">تفاصيل</button>
+                                                                <button class="details btn btn-secondary rounded"
+                                                                    onclick="window.location.href = '{{course.get_payment_url}}';">اكمال
+                                                                    الدفع</button>
+                                                                <button class="del btn_main"><i
+                                                                        class="fa-solid fa-trash-can"></i> طلب
+                                                                    حذف</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tabs-12" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">م</th>
+                                                        <th scope="col">اسم البرنامج</th>
+                                                        <th scope="col">تاريخ التسجيل</th>
+                                                        <th scope="col">تاريخ بدء الدورة</th>
+                                                        <th scope="col">تاريخ أنتهاء الدورة</th>
+                                                        <th scope="col">التفاصيل</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>هلاقصثل هاتنص</td>
+                                                        <td>11 فبراير</td>
+                                                        <td>25 فبراير</td>
+                                                        <td>10 فبراير</td>
+                                                        <td>
+                                                            <div class="btns">
+                                                                <button class="details btn_main"
+                                                                    onclick="window.location.href = '{{course.course.get_info_url}}';"><i
+                                                                        class="fa-solid fa-circle-info"></i>
+                                                                    تفاصيل</button>
+                                                                <button class="del btn_main"><i
+                                                                        class="fa-solid fa-trash-can"></i> طلب
+                                                                    حذف</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tabs-13" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">م</th>
+                                                        <th scope="col">اسم البرنامج</th>
+                                                        <th scope="col">تاريخ التسجيل</th>
+                                                        <th scope="col">تاريخ بدء الدورة</th>
+                                                        <th scope="col">تاريخ أنتهاء الدورة</th>
+                                                        <th scope="col">التفاصيل</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>شب ثنل تثص كمن</td>
+                                                        <td>25 مارس</td>
+                                                        <td>30 مارس</td>
+                                                        <td>7 فبراير</td>
+                                                        <td>
+                                                            <div class="btns">
+                                                                <button class="details btn_main"
+                                                                    onclick="window.location.href = '{{course.course.get_info_url}}';"><i
+                                                                        class="fa-solid fa-circle-info"></i>
+                                                                    تفاصيل</button>
+                                                                <button class="details btn btn-secondary rounded"
+                                                                    disabled>في انتظار القبول</button>
+                                                                <button class="del btn_main"><i
+                                                                        class="fa-solid fa-trash-can"></i> طلب
+                                                                    حذف</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tabs-14" role="tabpanel">
+                                        <p>4Third Panel</p>
+                                    </div>
+                                    <div class="tab-pane" id="tabs-15" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">م</th>
+                                                        <th scope="col">اسم البرنامج</th>
+                                                        <th scope="col">تاريخ التسجيل</th>
+                                                        <th scope="col">تاريخ بدء الدورة</th>
+                                                        <th scope="col">تاريخ أنتهاء الدورة</th>
+                                                        <th scope="col">التفاصيل</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>قكلت منقال نصث</td>
+                                                        <td>1 يناير</td>
+                                                        <td>8يناير</td>
+                                                        <td>2 ديسمبر</td>
+                                                        <td>
+                                                            <div class="btns">
+                                                                <button class="details btn_main"
+                                                                    onclick="window.location.href = '{{course.course.get_info_url}}';"><i
+                                                                        class="fa-solid fa-circle-info"></i>
+                                                                    تفاصيل</button>
+                                                                <button class="del btn_main"><i
+                                                                        class="fa-solid fa-trash-can"></i> طلب
+                                                                    حذف</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="tabs-3" role="tabpanel">
+                                شهادات
+                            </div>
+
+                            <div class="tab-pane fade" id="tabs-4" role="tabpanel">
+                                <section class="products-section similar-product">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-sm-6 main_box">
+                                                1
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="tab-pane fade" id="tabs-5" role="tabpanel">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">عنوان الاشعار</th>
+                                                <th scope="col">التاريخ</th>
+                                                <th scope="col">إجراءات</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>إدارة المشاريع الإحترافية PMP</td>
+                                                <td>04/09/2022</td>
+                                                <td>
+                                                    <div class="btns">
+                                                        <button class="details main-btn">تفاصيل</button>
+                                                        <button class="del main-btn">حذف</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>إدارة المشاريع الإحترافية PMP</td>
+                                                <td>04/09/2022</td>
+                                                <td>
+                                                    <div class="btns">
+                                                        <button class="details main-btn">تفاصيل</button>
+                                                        <button class="del main-btn">حذف</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="tabs-6" role="tabpanel">
+                                <div class="row">
+                                    <div class="col">
+                                        سيرتي الذاتية
+                                    </div>
+                                    <div class="col">
+                                        as das
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="tabs-7" role="tabpanel">
+                                <form action="" class="information">
+                                    <div class="form-group">
+                                        <h5>معلومات المهدى إليه</h5>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control"
+                                                    placeholder="اسم المهدى اليه الأول" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control"
+                                                    placeholder="اسم عائلة المهدى اليه" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group mt-3">
+                                        <input type="email" class="form-control" placeholder="إيميل المهدى إليه" />
+                                    </div>
+
+                                    <div class="form-group mt-3">
+                                        <select class="form-select">
+                                            <option value="" selected hidden>اختر الدورة</option>
+                                            <option value="1">دورة 1</option>
+                                            <option value="2">دورة 2</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group mt-3">
+                                        <h5>رسالتك للمهدى إليه</h5>
+                                    </div>
+
+                                    <div class="form-group mt-3">
+                                        <textarea placeholder="الرساله" class="form-control h-32"></textarea>
+                                    </div>
+
+                                    <div class="form-group d-flex justify-content-center">
+                                        <button class="d-block mx-auto py-2 px-4 mt-3 bg-second text-white rounded"><i
+                                                class="fa-solid fa-floppy-disk"></i> حفظ</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade" id="tabs-8" role="tabpanel">
+                                <div class="points">
+                                    <span>مجموع نقاطك </span>
+
+                                    <span class="how_point">8</span>
+                                    <hr>
+                                    <h6>أنجازاتك</h6>
+                                    <p class='text-left'>
+                                        sd asdsfq
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Profile -->
+
+        <!-- Divider about us -->
+        <section class="bg-main py-1">
+            <div class="container mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between">
+                    <p class="text-lg fw-bolder">شبكة التعلم الإلكتروني وتنمية الأشخاص المحترفين التي تخدم منطقة الشرق
+                        الأوسط وأفريقيا.</p>
+                    <a href="contact-us.html" class="bg-second text-white py-3 px-5 rounded mt-6 lg:mt-0"><span>اتصل
+                            بنا</span><i class="fa-solid fa-angle-left text-main mr-2"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- EndDivider about us -->
+
+        <footer class="py-5 bg-second text-white">
+            <div class="container mx-auto">
+                <div class="row pb-8">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="/">
+                            <div class="img_wrapper">
+                                <img src="img/logo1.png" alt="logo">
+                            </div>
+                        </a>
+                        <p class="text-gray-300 mt-3 text-sm">قبل أن نتحدث عن الوجهة ، نسلط الضوء على مؤسستك لفهم
+                            الأشخاص والعمليات والتكنولوجيا بشكل كامل. </p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-6 mt-3">
+                        <p class="border-b-2 border-gray-200 fw-bold text-2xl pb-3">تواصل معنا</p>
+                        <div class="d-flex flex-column align-items-start justify-content-center mt-3">
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-main ms-2"></i>
+                                <p class="mb-0">123456789+</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-main ms-2"></i>
+                                <p class="mb-0">123 شارع, الرياض, جدة</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-main ms-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-whatsapp text-main ms-2"></i>
+                                <p class="mb-0">123465789</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-6 mt-3">
+                        <p class="border-b-2 border-gray-200 fw-bold text-2xl pb-3">روابط اضافية</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="">
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">من نحن</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">اتصل بنا</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">السيرة الذاتية</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">الوظائف</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">المدونة</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">الآراء</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">الخدمات</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">فريقنا</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                        <p class="border-b-2 border-gray-200 fw-bold text-2xl pb-3">النشرة البريدية</p>
+                        <form class="mt-3">
+                            <div>
+                                <input type="text" class="form-control mt-2" placeholder="ادخل الاسم">
+                            </div>
+                            <div>
+                                <input type="text" class="form-control mt-2" placeholder="ادخل الايميل">
+                            </div>
+                            <button
+                                class="bg-main text-second text-center form-control mt-2 border-none outline-none"><i
+                                    class="fa-solid fa-paper-plane"></i>اشترك</button>
+                        </form>
+                    </div>
+                </div>
+                <div
+                    class="footer_bottom flex flex-col md:flex-row justify-between items-center border-t-2 border-gray-500 pt-3">
+                    <div>
+                        <p>جميع الحقوق محفوظة &copy; 2023</p>
+                    </div>
+                    <div class="flex gap-3 mt-6 md:mt-0">
+                        <a href="#"><i class="fa-brands fa-facebook-f text-3xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter text-3xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram text-3xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in text-3xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- End Home_page -->
+
+
+    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            $("nav").load("parts/navbar.html");
+            $("footer").load("parts/footer.html");
+        });
+    </script> -->
+
+    <!-- Javascripts -->
+    <!-- Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js"></script>
+    <!-- Fonts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- Local js -->
+    <script src="./js/carousel.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

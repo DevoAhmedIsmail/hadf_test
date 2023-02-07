@@ -398,3 +398,18 @@ footer .img_wrapper img {
     object-fit: contain;
 }
 /* End partners_page */
+
+/* Profile page */
+.profile .side_profile .nav-link {
+    display: block;
+    width: 100%;
+    text-align: start;
+    padding: 15px 10px;
+    color: var(--secondColor);
+}
+
+.profile .side_profile .nav-link.active {
+    background-color: var(--mainColor);
+    color: var(--secondColor);
+}
+/* End Profile page */
