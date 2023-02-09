@@ -199,7 +199,7 @@ nav {
 .courses .Price_c {
     position: absolute;
     bottom: 63px;
-    left: 18px;
+    /* left: 18px; */
     color: white;
     font-weight: bold;
     font-size: 14px;
