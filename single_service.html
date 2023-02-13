@@ -15,7 +15,8 @@
     <link href="lib/owlcarousel/assets/owl.theme.default.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="css/css-circular-prog-bar.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Bootstrap & Tailwind  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -28,7 +29,7 @@
 </head>
 
 <body>
-    <div class="home_page">
+    <div class="home_page ">
         <!-- Topbar -->
         <div class="hidden lg:block top_bar bg-second ">
             <div class=" container mx-auto">
@@ -148,132 +149,70 @@
         </nav>
         <!-- End Navbar -->
 
-        <!-- partners_page -->
-        <main class="partners_page">
-            <div class="container mx-auto">
-                <div class="row">
-                    <div class="col-md-3 col-12 py-5 relative z-0">
-                        <div class="sticky-top">
-                            <!-- search -->
-                            <div class="search_form">
-                                <form>
-                                    <div class="relative overflow-hidden">
-                                        <input type="text" class="form-control" placeholder="ابحث ...">
-                                        <i
-                                            class="fa-solid fa-magnifying-glass absolute left-0 -bottom-3 cursor-pointer bg-second text-white py-4 px-3"></i>
-                                    </div>
-                                </form>
+        <!-- Service -->
+        <main class="services py-5">
+            <div class="details">
+                <div class="container mx-auto">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="img_wrapper rounded shadow w-full h-64">
+                                <img src="img/services/img01.jpg" alt="service" class="w-full h-full rounded object-cover">
                             </div>
-
-                            <!-- help you -->
-                            <div class="bg-main py-3 px-3 mt-5 mb-4 rounded shadow">
-                                <p class="fw-bold text-lg mb-3">كيف يمكننا مساعدتك ؟</p>
-                                <p>اتصل بنا في المكتب الأقرب إليك أو أرسل استفسارًا تجاريًا عبر الإنترنت.</p>
-                                <button class="bg-second px-4 py-2 rounded text-white mt-4">اتصل بنا <i
-                                        class="fa-solid fa-phone-volume"></i></button>
+                        </div>
+                        <div class="col-md-8 mt-6 md:mt-0">
+                            <p class="fw-bold text-2xl">خدمات التدريب</p>
+                            <p class="tracking-wide leading-8">يساعد «المركز الإداري والمالي للتدريب» الأفراد على توسيع معارفهم ومداركهم العملية والنظرية وتطوير مهاراتهم عن طريق مجموعة غير محدودة من البرامج التدريبية التي تركز على مهارات القيادة والمنافسة التجارية ومهارات العمل المؤسسي. لتطوير مسيرتك المهنية في أي مرحلة منها سواء كنت طالب او موظف مبتدئ او اداري ذو منصب مرموق أو حتى صاحب العمل فهناك دائمًا مجال للتطور والازدهار الوظيفي والمعرفي، وعليه فنحن نقدم لك تجربة فريدة للتعلم القائم على دراسات الحالات العملية وأحدث النظريات العلمية ورؤى الأعمال القابلة للتنفيذ.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- features -->
+                    <div class="features py-5">
+                        <div class="section_title">
+                            <p>المميزات</p>
+                        </div>
+                        <div class="row divide-x-0 divide-y-2 md:divide-y-0 md:divide-x-2 mt-2 space-y-4 md:space-y-0" style="direction: ltr;">
+                            <div class="col-md-3 flex flex-col justify-center alitn-center   py-2">
+                                <i class="fa-solid fa-sack-dollar text-main text-5xl"></i>
+                                <div class="text-center">
+                                    <p class="fw-bold text-xl py-2">أسعار مناسبة</p>
+                                    <p class="">اسعارنا مناسبة واقتصادية</p>
+                                </div>
                             </div>
-
-                            <div class="bg-second text-white px-2 py-2 cursor-pointer">
-                                <p class="text-xl"><i class="fa-solid fa-file-pdf ml-3 text-main"></i><span>عن
-                                        الشركة</span></p>
+                            <div class="col-md-3 flex flex-col justify-center alitn-center  py-2">
+                                <i class="fa-solid fa-graduation-cap text-main text-5xl"></i>
+                                <div class="text-center">
+                                    <p class="fw-bold text-xl py-2">المتخرجين</p>
+                                    <p class="">مناسبة للمتخرجين والمتدربين</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 flex flex-col justify-center alitn-center  py-2">
+                                <i class="fa-solid fa-disease text-main text-5xl"></i>
+                                <div class="text-center">
+                                    <p class="fw-bold text-xl py-2">سهلة الوصول</p>
+                                    <p class="">يمكنك الوصول إليها بسهولة</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 flex flex-col justify-center alitn-center  py-2">
+                                <i class="fa-solid fa-certificate text-main text-5xl"></i>
+                                <div class="text-center">
+                                    <p class="fw-bold text-xl py-2">شهادة معتمدة</p>
+                                    <p class="">سوف تحصل علي شهادة معتمدة</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-9 col-12 py-5  bg-gray-100">
-                        <div class="section_title">
-                            <p>عملائنا</p>
-                        </div>
-                        <!-- list -->
-                        <div class="flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start mt-10">
-                            <div>
-                                <div class="img_wrapper shadow">
-                                    <img src="https://consulting.stylemixthemes.com/wp-content/uploads/2016/01/logo-aramiz-b-350x204.jpg"
-                                        alt="partner">
-                                </div>
-                            </div>
-                            <div class="px-3">
-                                <div class="py-2 mb-3">
-                                    <p class="text-2xl fw-bold text-second mb-2">شركة اراميز</p>
-                                    <p class="text-slate-400 text-sm">أجهزة تتبع الأداء الرياضي</p>
-                                    <p class="text-slate-400 text-sm">إسكونديدو ، كاليفورنيا</p>
-                                </div>
-                                <hr>
-                                <div class="mt-3">
-                                    <p class="fw-bolder">نحن لسنا منظمة رشيقة ويمكن الاعتماد عليها فقط بسبب فريقنا الخاص ؛ لدينا أيضًا شبكة
-                                        رائعة من الشركاء الذين يكملون خدماتنا ويسمحون لنا بالعمل بجدية أكبر وأفضل وأسرع
-                                        وأقوى.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start mt-10">
-                            <div>
-                                <div class="img_wrapper shadow">
-                                    <img src="https://consulting.stylemixthemes.com/wp-content/uploads/2016/01/logo-adup-b-350x204.jpg"
-                                        alt="partner">
-                                </div>
-                            </div>
-                            <div class="px-3">
-                                <div class="py-2 mb-3">
-                                    <p class="text-2xl fw-bold text-second mb-2">Adup Media LLC</p>
-                                    <p class="text-slate-400 text-sm">أجهزة تتبع الأداء الرياضي</p>
-                                    <p class="text-slate-400 text-sm">إسكونديدو ، كاليفورنيا</p>
-                                </div>
-                                <hr>
-                                <div class="mt-3">
-                                    <p class="fw-bolder">نحن لسنا منظمة رشيقة ويمكن الاعتماد عليها فقط بسبب فريقنا الخاص ؛ لدينا أيضًا شبكة
-                                        رائعة من الشركاء الذين يكملون خدماتنا ويسمحون لنا بالعمل بجدية أكبر وأفضل وأسرع
-                                        وأقوى.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start mt-10">
-                            <div>
-                                <div class="img_wrapper shadow">
-                                    <img src="https://consulting.stylemixthemes.com/wp-content/uploads/2016/01/logo-greenshield-b-350x204.jpg"
-                                        alt="partner">
-                                </div>
-                            </div>
-                            <div class="px-3">
-                                <div class="py-2 mb-3">
-                                    <p class="text-2xl fw-bold text-second mb-2">Green Shield</p>
-                                    <p class="text-slate-400 text-sm">أجهزة تتبع الأداء الرياضي</p>
-                                    <p class="text-slate-400 text-sm">إسكونديدو ، كاليفورنيا</p>
-                                </div>
-                                <hr>
-                                <div class="mt-3">
-                                    <p class="fw-bolder">نحن لسنا منظمة رشيقة ويمكن الاعتماد عليها فقط بسبب فريقنا الخاص ؛ لدينا أيضًا شبكة
-                                        رائعة من الشركاء الذين يكملون خدماتنا ويسمحون لنا بالعمل بجدية أكبر وأفضل وأسرع
-                                        وأقوى.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start mt-10">
-                            <div>
-                                <div class="img_wrapper shadow">
-                                    <img src="https://consulting.stylemixthemes.com/wp-content/uploads/2016/01/logo-primo-b-350x204.jpg"
-                                        alt="partner">
-                                </div>
-                            </div>
-                            <div class="px-3">
-                                <div class="py-2 mb-3">
-                                    <p class="text-2xl fw-bold text-second mb-2">Primo Software</p>
-                                    <p class="text-slate-400 text-sm">أجهزة تتبع الأداء الرياضي</p>
-                                    <p class="text-slate-400 text-sm">إسكونديدو ، كاليفورنيا</p>
-                                </div>
-                                <hr>
-                                <div class="mt-3">
-                                    <p class="fw-bolder">نحن لسنا منظمة رشيقة ويمكن الاعتماد عليها فقط بسبب فريقنا الخاص ؛ لدينا أيضًا شبكة
-                                        رائعة من الشركاء الذين يكملون خدماتنا ويسمحون لنا بالعمل بجدية أكبر وأفضل وأسرع
-                                        وأقوى.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- End features -->
+
+                    <!-- Buttons -->
+                    <div class="flex justify-end gap-2">
+                        <a href="#" class="bg-main text-slate-50 hover:bg-white hover:text-blue-500 py-2 px-3 rounded fw-bold">الاشتراك في الخدمة</a>
+                        <a href="courses.html" class="bg-second text-white  py-2 px-3 rounded fw-bold">مشاهدة الدورات</a>
                     </div>
                 </div>
             </div>
         </main>
-        <!-- End partners_page -->
-
+        <!-- End Service -->
 
         <!-- Divider about us -->
         <section class="bg-main py-1">
@@ -281,8 +220,8 @@
                 <div class="flex flex-col lg:flex-row items-center justify-between">
                     <p class="text-lg fw-bolder">شبكة التعلم الإلكتروني وتنمية الأشخاص المحترفين التي تخدم منطقة الشرق
                         الأوسط وأفريقيا.</p>
-                    <a href="#" class="bg-second text-white py-3 px-5 rounded mt-6 lg:mt-0"><span>اتصل بنا</span><i
-                            class="fa-solid fa-angle-left text-main mr-2"></i></a>
+                    <a href="contact-us.html" class="bg-second text-white py-3 px-5 rounded mt-6 lg:mt-0"><span>اتصل
+                            بنا</span><i class="fa-solid fa-angle-left text-main mr-2"></i></a>
                 </div>
             </div>
         </section>
@@ -373,8 +312,9 @@
             </div>
         </footer>
 
-    </div>
-    <!-- End Home_page -->
+    
+   
+
 
     <!-- Javascripts -->
     <!-- Tailwind  -->
@@ -397,13 +337,18 @@
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="lib/wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <!-- Local js -->
     <script src="./js/carousel.js"></script>
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>

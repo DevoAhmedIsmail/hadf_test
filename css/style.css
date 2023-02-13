@@ -413,3 +413,159 @@ footer .img_wrapper img {
     color: var(--secondColor);
 }
 /* End Profile page */
+
+/* Course_details_Page & couse_content_page */
+.course_details_page .nav-tabs {
+    border-bottom: none;
+}
+
+.course_details_page .nav-tabs .nav-link {
+    color: var(--secondColor);
+}
+
+.course_details_page .nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 2px solid var(--mainColor);
+    color: var(--mainColor);
+}
+
+.course_details_page .collapse {
+    visibility: visible!important;
+}
+
+.course_details_page .accordion-button,
+.course_details_page .accordion-button:focus,
+.course_details_page .accordion-button:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.course_details_page .accordion-button:not(.collapsed) {
+    background-color: var(--mainColor);
+    color: #fff;
+    outline: none;
+    box-shadow: -7px 11px 15px 0px #c7c7c7;
+}
+
+.course_details_page .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.course_details_page .accordion-button::after {
+    margin-right: 10px;
+}
+
+.course_details_page .course_content_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.course_details_page .course_content_item:hover {
+    background-color: rgba(199, 198, 198, 0.74);
+}
+
+.course_details_page .course_content_item .details,
+.course_details_page .course_content_item .details a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course_details_page .course_content_item .details a:hover {
+    color: var(--secondColor);
+}
+
+.course_content_page .course_content_item.watch_now {
+    background-color: #0187a9;
+    color: #fff;
+}
+
+.course_details_page .course-file .title,
+.course_details_page .course-test .title  {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+
+.course_details_page .course-file p {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+}
+
+.course_details_page .course-file .attachment .header {
+    background-color: #eee;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.course_details_page .course-file .attachment .header .icon {
+    margin-left: 5px;
+}
+
+.course_details_page .course-file .attachment .attachment_content {
+    padding: 10px 5px;
+}
+
+.course_details_page .course-file .attachment .attachment_content_item .item {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+.course_details_page .course-file .attachment .attachment_content_item .item:hover {
+    background-color: #eee;
+}
+
+.course_details_page .course-file .attachment .attachment_content_item .icon {
+    margin-left: 5px;
+    font-weight: 600;   
+}
+
+.course_details_page .course-test .test_item {
+    border-bottom: 2px solid #eee;
+    margin-top: 10px;
+}
+
+.course_details_page .course-test .test_item .question {
+    font-weight: 600;
+    font-size: 18px;
+}
+body {
+    counter-reset:question-counter
+}
+.course_details_page .course-test .test_item .question::before {
+    counter-increment: question-counter;
+    content: counter(question-counter);
+    background-color: var(--mainColor);
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    border-radius: 50%;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.course_details_page .course-test .test_item ul {
+    list-style: none;
+    padding: 10px 15px;
+}
+
+.course_details_page .course-test .test_item ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #868686;;
+}
+
+
+/* End Course_details_Page & couse_content_page */

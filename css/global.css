@@ -17,6 +17,16 @@ body {
     font-family: 'Cairo', sans-serif;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: var(--mainColor);
+}
+  
+::selection {
+    color: #fff;
+    background: var(--mainColor);
+}
+
 .text-main {
     color: var(--mainColor);
 }

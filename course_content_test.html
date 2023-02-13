@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.theme.default.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/css-circular-prog-bar.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <!-- Bootstrap & Tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>HADF</title>
+</head>
+
+<body>
+    <div class="home_page">
+        <!-- Topbar -->
+        <div class="hidden lg:block top_bar bg-second ">
+            <div class=" container mx-auto">
+                <div class="d-flex items-center justify-between text-white">
+                    <div class="d-flex gap-2 items-center">
+                        <p><i class="fa-solid fa-phone ml-2"></i><span>997928928298</span></p>
+                        <p><i class="fa-solid fa-envelope-open ml-2"></i><span>mail@example.com</span></p>
+                        <a href="download-center.html" class="py-2 px-2 cursor-pointer bg-main text-second hover:text-black fw-bolder">
+                            <i class="fa-solid fa-download ml-2"></i><span>مركز التحميل</span>
+                        </a>
+                    </div>
+                    <div class="d-flex items-center gap-4">
+                        <p class="cursor-pointer hover:text-yellow-500"><i
+                                class="fa-solid fa-magnifying-glass ml-2"></i><span>ابحث الان</span></p>
+                        <div class="d-flex gap-3">
+                            <i class="fa-brands fa-twitter cursor-pointer hover:text-yellow-500"></i>
+                            <i class="fa-brands fa-facebook-f cursor-pointer hover:text-yellow-500"></i>
+                            <i class="fa-brands fa-linkedin-in cursor-pointer hover:text-yellow-500"></i>
+                            <i class="fa-brands fa-instagram cursor-pointer hover:text-yellow-500"></i>
+                        </div>
+                        <div>
+                            <a href="index.html" class="d-flex items-center cursor-pointer hover:text-yellow-500">
+                                <p class="ms-2">En</p>
+                                <div class="img_wrap">
+                                    <img src="img/usflag.webp"
+                                        alt="en">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+
+        <!-- Navbar -->
+        <nav
+            class=" flex flex-wrap justify-between md:justify-start items-center shadow  w-full px-0 md:px-4 text-lg text-gray-700 bg-white">
+
+            <div class="px-4">
+                <a href="index-ar.html">
+                    <img src="img/logo.png" alt="logo" class="w-16 h-16 object-contain	">
+                </a>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="mx-4 h-6 w-6 cursor-pointer md:hidden block"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <div class="hidden w-full px-4 pb-2 md:pb-0 md:px-0 md:flex md:items-center md:w-auto bg-blue-800 md:bg-white fw-bolder" id="menu">
+                <ul class="text-base text-gray-700 md:flex md:justify-between  md:pt-0">
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500" href="index-ar.html">الرئيسية</a>
+                    </li>
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500 flex items-center justify-between href="about.html">
+                            <span>من نحن</span>
+                            <i class="fa-solid fa-chevron-down mr-2"></i>
+                        </a>
+                        <ul
+                            class="absolute top-10 border pr-2 bg-white text-black w-40 hidden group-hover:block rounded nav_item_dropdown">
+                            <li class="py-2 px-2"><a href="about.html" class="hover:text-yellow-500">عن المركز</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500 flex items-center justify-between" href="categories.html">
+                            <span>التخصصات التدريبية</span>
+                            <i class="fa-solid fa-chevron-down mr-2"></i>
+                        </a>
+                        <ul
+                            class="absolute top-10 border pr-2 bg-white text-black w-40 hidden group-hover:block rounded nav_item_dropdown">
+                            <li class="py-2 px-2"><a href="courses.html" class="hover:text-yellow-500">موارد بشرية</a></li>
+                            <li class="py-2 px-2"><a href="courses.html" class="hover:text-yellow-500">تقنية المعلومات</a></li>
+                            <li class="py-2 px-2"><a href="courses.html" class="hover:text-yellow-500">ادارة</a></li>
+                            <li class="py-2 px-2"><a href="courses.html" class="hover:text-yellow-500">جودة</a></li>
+                            <li class="py-2 px-2"><a href="courses.html" class="hover:text-yellow-500">ريادة اعمال</a></li>
+                            <li class="py-2 px-2"><a href="courses.html" class="hover:text-yellow-500">محاسبة مالية</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500 flex items-center justify-between" href="services.html">
+                            <span>خدماتنا</span>
+                            <i class="fa-solid fa-chevron-down mr-2"></i>
+                        </a>
+                        <ul
+                            class="absolute top-10 border pr-2 bg-white text-black w-40 hidden group-hover:block rounded nav_item_dropdown">
+                            <li class="py-2 px-2"><a href="single_service.html" class="hover:text-yellow-500">خدمات تدريب</a></li>
+                            <li class="py-2 px-2"><a href="single_service.html" class="hover:text-yellow-500">خدمات استشارات</a></li>
+                            <li class="py-2 px-2"><a href="single_service.html" class="hover:text-yellow-500">خدمات توظيف</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500 flex items-center justify-between" href="#">
+                            <span>المركز الاعلامي</span>
+                            <i class="fa-solid fa-chevron-down mr-2"></i>
+                        </a>
+                        <ul
+                            class="absolute top-10 border pr-2 bg-white text-black w-32 hidden group-hover:block rounded nav_item_dropdown">
+                            <li class="py-2 px-2"><a href="news.html" class="hover:text-yellow-500">اخبار</a></li>
+                            <li class="py-2 px-2"><a href="testimonials.html" class="hover:text-yellow-500">قالوا عنا</a></li>
+                            <li class="py-2 px-2"><a href="photos.html" class="hover:text-yellow-500">صور</a></li>
+                            <li class="py-2 px-2"><a href="videos.html" class="hover:text-yellow-500">فيديوهات</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500" href="blogs.html">المدونة</a>
+                    </li>
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 py-2 block hover:text-yellow-500" href="contact-us.html">اتصل بنا</a>
+                    </li>
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 px-4 py-2 mr-0 lg:mr-24 d-inline-block hover:text-yellow-500 bg-second text-white rounded-full " href="signin.html">تسجيل الدخول</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- course_content_page -->
+        <main class="course_content_page course_details_page">
+            <div class="container mx-auto">
+                <div class="row">
+                    <div class="col-md-4 col-12 py-5 relative z-0">
+                        <div class="sticky-top border-l-2 px-2">
+                            <div class="accordion" id="accordionCourseContent">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="courseContentHeadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            المحاضرة الأولي
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse  show"
+                                        aria-labelledby="courseContentHeadingOne"
+                                        data-bs-parent="#accordionCourseContent">
+                                        <div class="accordion-body">
+                                            <ul class="course_content_items_wrapper">
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>7 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 2</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>5 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 3</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>20 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item watch_now">
+                                                    <div class="details">
+                                                        <a href="course_content_test.html">
+                                                            <i class="icon fa-solid fa-file-circle-question"></i>
+                                                            <p>اختبار 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 4</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>3 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 5</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>7 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course_content_file.html">
+                                                            <i class="icon fa-solid fa-file-lines"></i>
+                                                            <p>ملف 2</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-circle-question"></i>
+                                                            <p>اختبار 2</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="courseContentHeadingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            المحاضرة الثانية
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="courseContentHeadingTwo"
+                                        data-bs-parent="#accordionCourseContent">
+                                        <div class="accordion-body">
+                                            <ul class="course_content_items_wrapper">
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>7 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 2</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>5 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-lines"></i>
+                                                            <p>ملف 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 3</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>20 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 4</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>3 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-circle-question"></i>
+                                                            <p>اختبار 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="courseContentHeadingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            المحاضرة الثالثة
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="courseContentHeadingThree"
+                                        data-bs-parent="#accordionCourseContent">
+                                        <div class="accordion-body">
+                                            <ul class="course_content_items_wrapper">
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>7 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 2</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>5 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-lines"></i>
+                                                            <p>ملف 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 3</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>16 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 4</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>30 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-lines"></i>
+                                                            <p>ملف 2</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-circle-question"></i>
+                                                            <p>اختبار 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="courseContentHeadingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            المحاضرة الرابعه
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="courseContentHeadingFour"
+                                        data-bs-parent="#accordionCourseContent">
+                                        <div class="accordion-body">
+                                            <ul class="course_content_items_wrapper">
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>8 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 2</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>2 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-lines"></i>
+                                                            <p>ملف 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 3</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>3 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 4</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>8 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-lines"></i>
+                                                            <p>ملف 2</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-lines"></i>
+                                                            <p>ملف 3</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-circle-question"></i>
+                                                            <p>اختبار 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="courseContentHeadingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            المحاضرة الخامسة
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="courseContentHeadingFive"
+                                        data-bs-parent="#accordionCourseContent">
+                                        <div class="accordion-body">
+                                            <ul class="course_content_items_wrapper">
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>7 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-lines"></i>
+                                                            <p>ملف 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 2</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>20 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-lines"></i>
+                                                            <p>ملف 2</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 3</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>3 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 4</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>8 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-circle-play"></i>
+                                                            <p>فيديو 5</p>
+                                                        </a>
+                                                    </div>
+                                                    <div>2 دقيقة</div>
+                                                </li>
+                                                <li class="course_content_item">
+                                                    <div class="details">
+                                                        <a href="course-content.html">
+                                                            <i class="icon fa-solid fa-file-circle-question"></i>
+                                                            <p>اختبار 1</p>
+                                                        </a>
+                                                    </div>
+                                                    <div></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-12 py-5">
+                        <p class="fw-bold text-2xl">اختبار 1</p>
+                    
+
+                        <!-- Test -->
+                        <div class="course-test">
+                            <div class="py-2 px-3">
+                                <div class="tests_wrapper">
+                                    <div class="test_item">
+                                        <p class="question">ما هو التسويق</p>
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span>الاعلان</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span>البيع</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span>الشراء</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span>كل ما ذكر</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="test_item">
+                                        <p class="question">ما الفرق بين الإعلام الإجتماعي والإعلام الجديد ?</p>
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span>لا يوجد فرق بينهم</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span>الإعلام الإجتماعي والشبكات الإجتماعية نفس الأمر</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span>الإعلام الإجتماعي هو الأساس والشبكات الإجتماعية تندرج تحته</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span>الإعلام الإجتماعي يركز على أساسيات التواصل بينما الشبكات تركز على أدوات التواصل</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="test_item">
+                                        <p class="question">إلى متى يبقى الإعلام الجديد جديداً؟</p>
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span>لا يوجد وقت محدد لإنتهاء مصطلح الإعلام الجديد</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span>حينما تظهر مواقع جديدة</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span> سيبقى الإعلام الجديد متطوراً متى ما تطورت التقنيات</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="quest-1"/>
+                                                    <span> حينما يتفق الخبراء على تغيير المصطلح لشيء جديد</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="bg-main px-3 py-2 rounded text-white mt-3">تأكيد الاجابات</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Test -->
+
+                        <div class="course_navigate flex justify-between items-center mt-3">
+                            <a href="#" class="px-3 py-2 bg-second text-white rounded"><i class="fa-solid fa-chevron-right"></i> الدرس التالي</a>
+                            <a href="#" class="px-3 py-2 bg-second text-white rounded">الدرس السابق <i class="fa-solid fa-chevron-left"></i></a>
+                        </div>
+
+                        <nav class="mt-6 z-0">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <p class="nav-link active" id="nav-details-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-details" type="button" role="tab" aria-controls="nav-details"
+                                    aria-selected="true">ملاحظات</p>
+                                <p class="nav-link" id="nav-QA-tab" data-bs-toggle="tab" data-bs-target="#nav-QA"
+                                    type="button" role="tab" aria-controls="nav-QA" aria-selected="false">مناقشات</p>
+                            </div>
+                        </nav>
+                        <div class="tab-content bg-gray-100 p-3" id="nav-tabContent">
+                            <!-- تفاصيل الدوره -->
+                            <div class="tab-pane fade show active" id="nav-details" role="tabpanel"
+                                aria-labelledby="nav-details-tab">
+                                <div class="mt-3">
+                                    <p class="text-xl fw-bold text-second">قي هذا الفيديو سوف تتعلم</p>
+                                    <ul class="mt-2">
+                                        <li class="flex items-center gap-2">
+                                            <i class="fa-regular fa-circle-check text-blue-500"></i>
+                                            <p class="text-gray-600 text-lg">سوف تحصل علي شهاده</p>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fa-regular fa-circle-check text-blue-500"></i>
+                                            <p class="text-gray-600 text-lg">خبرة معملية</p>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fa-regular fa-circle-check text-blue-500"></i>
+                                            <p class="text-gray-600 text-lg">التعامل مع المشاكل بسهولة</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End تفاصيل الدوره -->
+
+                            <!-- مناقشات -->
+                            <div class="tab-pane fade" id="nav-QA" role="tabpanel" aria-labelledby="nav-QA-tab">
+                                <div class="flex flex-col relative mb-3 border-b-2 py-3">
+                                    <div class="flex flex-row">
+                                        <div class="w-10 h-10 rounded-full">
+                                            <img src="./img/team-2.jpg" alt="user"
+                                                class="w-full h-full object-cover rounded-full">
+                                        </div>
+                                        <div class="mr-3">
+                                            <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت</p>
+                                            <div class="flex items-center mt-2">
+                                                <p class="text-sm fw-bold">ساندرا</p>
+                                                <p class="text-sm text-gray-400 mr-2">. منذ شهر</p>
+                                            </div>
+                                        </div>
+                                        <p class="fw-bold absolute top-3 left-2 cursor-pointer"><i
+                                                class="fa-solid fa-share ml-2"></i><span>2</span></p>
+                                    </div>
+                                    <!-- Replies -->
+                                    <div class="replies bg-gray-200 p-3 mt-2">
+                                        <div class="px-5">
+                                            <div class="flex flex-row border-b-2 border-gray-300 pb-3 mb-2">
+                                                <div class="w-10 h-10 rounded-full">
+                                                    <img src="./img/testimonial-3.jpg" alt="user"
+                                                        class="w-full h-full object-cover rounded-full">
+                                                </div>
+                                                <div class="mr-3">
+                                                    <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت</p>
+                                                    <div class="flex items-center mt-2">
+                                                        <p class="text-sm fw-bold">محمد</p>
+                                                        <p class="text-sm text-gray-400 mr-2">. منذ 3 أسابيع</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-row border-b-2 border-gray-300 pb-3 mb-2">
+                                                <div class="w-10 h-10 rounded-full">
+                                                    <img src="./img/team-1.jpg" alt="user"
+                                                        class="w-full h-full object-cover rounded-full">
+                                                </div>
+                                                <div class="mr-3">
+                                                    <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت</p>
+                                                    <div class="flex items-center mt-2">
+                                                        <p class="text-sm fw-bold">محمود</p>
+                                                        <p class="text-sm text-gray-400 mr-2">. منذ شهر</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Add Comment -->
+                                    <div class="add_comment mt-3">
+                                        <form class="flex justify-between relative">
+                                            <div class="w-10 h-10 rounded-full">
+                                                <img src="./img/testimonial-2.jpg" alt="user"
+                                                    class="w-full h-full object-cover rounded-full">
+                                            </div>
+                                            <input type="text" class="form-control mx-2">
+                                            <button class="bg-main text-white py-2 px-3 absolute left-2 top-0">اضف
+                                                تعليقا</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col relative mb-3 border-b-2 py-3">
+                                    <div class="flex flex-row">
+                                        <div class="w-10 h-10 rounded-full">
+                                            <img src="./img/team-3.jpg" alt="user"
+                                                class="w-full h-full object-cover rounded-full">
+                                        </div>
+                                        <div class="mr-3">
+                                            <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت</p>
+                                            <div class="flex items-center mt-2">
+                                                <p class="text-sm fw-bold">أحمد</p>
+                                                <p class="text-sm text-gray-400 mr-2">. منذ شهرين</p>
+                                            </div>
+                                        </div>
+                                        <p class="fw-bold absolute top-3 left-2 cursor-pointer"><i
+                                                class="fa-solid fa-share ml-2"></i><span>1</span></p>
+                                    </div>
+
+                                    <!-- Replies -->
+                                    <div class="replies bg-gray-200 p-3 mt-2">
+                                        <div class="px-5">
+                                            <div class="flex flex-row border-b-2 border-gray-300 pb-3 mb-2">
+                                                <div class="w-10 h-10 rounded-full">
+                                                    <img src="./img/testimonial-3.jpg" alt="user"
+                                                        class="w-full h-full object-cover rounded-full">
+                                                </div>
+                                                <div class="mr-3">
+                                                    <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت</p>
+                                                    <div class="flex items-center mt-2">
+                                                        <p class="text-sm fw-bold">محمد</p>
+                                                        <p class="text-sm text-gray-400 mr-2">. منذ 3 أسابيع</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Add Comment -->
+                                    <div class="add_comment mt-3">
+                                        <form class="flex justify-between relative">
+                                            <div class="w-10 h-10 rounded-full">
+                                                <img src="./img/testimonial-2.jpg" alt="user"
+                                                    class="w-full h-full object-cover rounded-full">
+                                            </div>
+                                            <input type="text" class="form-control mx-2">
+                                            <button class="bg-main text-white py-2 px-3 absolute left-2 top-0">اضف
+                                                تعليقا</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col relative mb-3 border-b-2 py-3">
+                                    <div class="flex flex-row">
+                                        <div class="w-10 h-10 rounded-full">
+                                            <img src="./img/team-1.jpg" alt="user"
+                                                class="w-full h-full object-cover rounded-full">
+                                        </div>
+                                        <div class="mr-3">
+                                            <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت</p>
+                                            <div class="flex items-center mt-2">
+                                                <p class="text-sm fw-bold">مصطفى</p>
+                                                <p class="text-sm text-gray-400 mr-2">. منذ 3 أيام</p>
+                                            </div>
+                                        </div>
+                                        <p class="fw-bold absolute top-3 left-2 cursor-pointer"><i
+                                                class="fa-solid fa-share ml-2"></i><span>0</span></p>
+                                    </div>
+                                    <div class="add_comment mt-3">
+                                        <form class="flex justify-between relative">
+                                            <div class="w-10 h-10 rounded-full">
+                                                <img src="./img/testimonial-2.jpg" alt="user"
+                                                    class="w-full h-full object-cover rounded-full">
+                                            </div>
+                                            <input type="text" class="form-control mx-2">
+                                            <button class="bg-main text-white py-2 px-3 absolute left-2 top-0">اضف
+                                                تعليقا</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- End مناقشات -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- End course_content_page -->
+
+
+        <!-- Divider about us -->
+        <section class="bg-main py-1">
+            <div class="container mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between">
+                    <p class="text-lg fw-bolder">شبكة التعلم الإلكتروني وتنمية الأشخاص المحترفين التي تخدم منطقة الشرق
+                        الأوسط وأفريقيا.</p>
+                    <a href="#" class="bg-second text-white py-3 px-5 rounded mt-6 lg:mt-0"><span>اتصل بنا</span><i
+                            class="fa-solid fa-angle-left text-main mr-2"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- EndDivider about us -->
+
+        <footer class="py-5 bg-second text-white">
+            <div class="container mx-auto">
+                <div class="row pb-8">
+                    <div class=" col-md-4 col-sm-6 col-12">
+                        <a href="/">
+                            <div class="img_wrapper">
+                                <img src="img/logo1.png" alt="logo">
+                            </div>
+                        </a>
+                        <p class="text-gray-300 mt-3 text-sm">قبل أن نتحدث عن الوجهة ، نسلط الضوء على مؤسستك لفهم
+                            الأشخاص والعمليات والتكنولوجيا بشكل كامل. </p>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 col-12 px-6 mt-3">
+                        <p class="border-b-2 border-gray-200 fw-bold text-2xl pb-3">تواصل معنا</p>
+                        <div class="d-flex flex-column align-items-start justify-content-center mt-3">
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-main ms-2"></i>
+                                <p class="mb-0">123456789+</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-main ms-2"></i>
+                                <p class="mb-0">123 شارع, الرياض, جدة</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-main ms-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-whatsapp text-main ms-2"></i>
+                                <p class="mb-0">123465789</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 col-12 px-6 mt-3">
+                        <p class="border-b-2 border-gray-200 fw-bold text-2xl pb-3">روابط اضافية</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="">
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">من نحن</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">اتصل بنا</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">السيرة الذاتية</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">الوظائف</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">المدونة</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">الآراء</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">الخدمات</a></li>
+                                    <li class="mt-3"><a href="#" class="hover:text-yellow-500">فريقنا</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" col-md-4 col-sm-6 col-12 mt-3">
+                        <p class="border-b-2 border-gray-200 fw-bold text-2xl pb-3">النشرة البريدية</p>
+                        <form class="mt-3">
+                            <div>
+                                <input type="text" class="form-control mt-2" placeholder="ادخل الاسم">
+                            </div>
+                            <div>
+                                <input type="text" class="form-control mt-2" placeholder="ادخل الايميل">
+                            </div>
+                            <button
+                                class="bg-main text-second text-center form-control mt-2 border-none outline-none"><i
+                                    class="fa-solid fa-paper-plane"></i>اشترك</button>
+                        </form>
+                    </div>
+                </div>
+                <div
+                    class="footer_bottom flex flex-col md:flex-row justify-between items-center border-t-2 border-gray-500 pt-3">
+                    <div>
+                        <p>جميع الحقوق محفوظة &copy; 2023</p>
+                    </div>
+                    <div class="flex gap-3 mt-6 md:mt-0">
+                        <a href="#"><i class="fa-brands fa-facebook-f text-3xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter text-3xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram text-3xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in text-3xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    
+
+    <!-- Javascripts -->
+    <!-- Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js"></script>
+    <!-- Fonts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- Local js -->
+    <script src="./js/carousel.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
